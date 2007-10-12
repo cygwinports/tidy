@@ -1,0 +1,77 @@
+tidy
+------------------------------------------
+HTML pretty printer library and executable
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://tidy.sourceforge.net/
+
+Canonical download:
+  http://tidy.cvs.sourceforge.net/tidy/tidy/
+
+-------------------------------------------
+
+Build instructions:
+  unpack tidy-20070919-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./tidy-20070919-X.cygport all
+
+This will create:
+  /usr/src/tidy-20070919-X-src.tar.bz2
+  /usr/src/tidy-20070919-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygtidy-0-99-0.dll
+  /usr/bin/tab2space.exe
+  /usr/bin/tidy.exe
+  /usr/include/buffio.h
+  /usr/include/platform.h
+  /usr/include/tidy.h
+  /usr/include/tidyenum.h
+  /usr/lib/libtidy.a
+  /usr/lib/libtidy.dll.a
+  /usr/lib/libtidy.la
+  /usr/share/doc/Cygwin/tidy-20070919.README
+  /usr/share/doc/tidy-20070919/README.txt
+  /usr/share/doc/tidy-20070919/html/Overview.html
+  /usr/share/doc/tidy-20070919/html/checked_by_tidy.gif
+  /usr/share/doc/tidy-20070919/html/doxygen.cfg
+  /usr/share/doc/tidy-20070919/html/faq.html
+  /usr/share/doc/tidy-20070919/html/grid.gif
+  /usr/share/doc/tidy-20070919/html/license.html
+  /usr/share/doc/tidy-20070919/html/pending.html
+  /usr/share/doc/tidy-20070919/html/quickref-html.xsl
+  /usr/share/doc/tidy-20070919/html/release-notes.html
+  /usr/share/doc/tidy-20070919/html/tidy.css
+  /usr/share/doc/tidy-20070919/html/tidy.gif
+  /usr/share/doc/tidy-20070919/html/tidy1.xsl
+
+------------------
+
+Port Notes:
+
+----- version 20070919-1 -----
+Long-overdue version bump; last official release was 041206-1.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

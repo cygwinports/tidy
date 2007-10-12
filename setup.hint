@@ -1,0 +1,4 @@
+category: Text
+requires: cygwin
+sdesc: "HTML pretty printer library and executable"
+ldesc: "HTML pretty printer library and executable"
