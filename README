@@ -3,17 +3,16 @@ tidy
 HTML pretty printer library and executable
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-15
 
 Build requirements:
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.12-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -26,17 +25,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack tidy-20071106-X-src.tar.bz2
+  unpack tidy-20080618-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./tidy-20071106-X.cygport all
+  cygport ./tidy-20080618-X.cygport all
 
 This will create:
-  /usr/src/libtidy-devel-20071106-X.tar.bz2
-  /usr/src/libtidy0_99_0-20071106-X.tar.bz2
-  /usr/src/tidy-20071106-X-src.tar.bz2
-  /usr/src/tidy-20071106-X.tar.bz2
+  /usr/src/libtidy-devel-20080618-X.tar.bz2
+  /usr/src/libtidy0_99_0-20080618-X.tar.bz2
+  /usr/src/tidy-20080618-X-src.tar.bz2
+  /usr/src/tidy-20080618-X.tar.bz2
 
 -------------------------------------------
 
@@ -44,20 +43,19 @@ Files included in the binary package:
 
   /usr/bin/tab2space.exe
   /usr/bin/tidy.exe
-  /usr/share/doc/Cygwin/tidy-20071106.README
-  /usr/share/doc/tidy-20071106/README.txt
-  /usr/share/doc/tidy-20071106/html/Overview.html
-  /usr/share/doc/tidy-20071106/html/checked_by_tidy.gif
-  /usr/share/doc/tidy-20071106/html/doxygen.cfg
-  /usr/share/doc/tidy-20071106/html/faq.html
-  /usr/share/doc/tidy-20071106/html/grid.gif
-  /usr/share/doc/tidy-20071106/html/license.html
-  /usr/share/doc/tidy-20071106/html/pending.html
-  /usr/share/doc/tidy-20071106/html/quickref-html.xsl
-  /usr/share/doc/tidy-20071106/html/release-notes.html
-  /usr/share/doc/tidy-20071106/html/tidy.css
-  /usr/share/doc/tidy-20071106/html/tidy.gif
-  /usr/share/doc/tidy-20071106/html/tidy1.xsl
+  /usr/share/doc/tidy-20080618/README.txt
+  /usr/share/doc/tidy-20080618/html/Overview.html
+  /usr/share/doc/tidy-20080618/html/checked_by_tidy.gif
+  /usr/share/doc/tidy-20080618/html/doxygen.cfg
+  /usr/share/doc/tidy-20080618/html/faq.html
+  /usr/share/doc/tidy-20080618/html/grid.gif
+  /usr/share/doc/tidy-20080618/html/license.html
+  /usr/share/doc/tidy-20080618/html/pending.html
+  /usr/share/doc/tidy-20080618/html/quickref-html.xsl
+  /usr/share/doc/tidy-20080618/html/release-notes.html
+  /usr/share/doc/tidy-20080618/html/tidy.css
+  /usr/share/doc/tidy-20080618/html/tidy.gif
+  /usr/share/doc/tidy-20080618/html/tidy1.xsl
 
 (libtidy0_99_0)
   /usr/bin/cygtidy-0-99-0.dll
@@ -74,6 +72,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 20080618-1 -----
+Version bump.
 
 ----- version 20071106-1 -----
 Version bump.
