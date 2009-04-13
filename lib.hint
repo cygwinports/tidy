@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin
+requires: cygwin libgcc1
 external-source: tidy
 sdesc: "HTML pretty printer (library runtime)"
 ldesc: "HTML pretty printer library and executable"
