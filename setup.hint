@@ -1,4 +1,4 @@
 category: Text
-requires: cygwin libgcc1 libtidy0_99_0
+requires: libgcc1 libtidy0_99_0
 sdesc: "HTML pretty printer (executables)"
 ldesc: "HTML pretty printer library and executable"
