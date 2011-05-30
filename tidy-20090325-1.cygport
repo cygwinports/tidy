@@ -15,7 +15,7 @@ PKG_CONTENTS[2]='usr/include/ usr/lib/'
 src_compile() {
 	lndirs
 	cd ${B}
-	./build/gnuauto/setup.sh || error "autotool setup.sh failed"
+	sh ./build/gnuauto/setup.sh || error "autotool setup.sh failed"
 	CYGCONF_SOURCE=${B} cygconf --includedir=/usr/include/tidy
 	cygmake
 }
