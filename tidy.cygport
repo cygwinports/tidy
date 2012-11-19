@@ -1,0 +1,28 @@
+NAME="tidy"
+VERSION=20090325
+RELEASE=1
+CATEGORY="Text"
+SUMMARY="HTML pretty printer"
+DESCRIPTION="Dave Raggett's excellent HTML Tidy program, with additional
+patches and refactored into a free-standing C library."
+HOMEPAGE="http://tidy.sourceforge.net/"
+CVS_URI=":pserver:anonymous@tidy.cvs.sourceforge.net:/cvsroot/tidy"
+CVS_DATE="$((${VERSION} + 1))"
+inherit cvs
+
+PKG_NAMES="tidy libtidy0_99_0 libtidy-devel"
+tidy_CONTENTS='usr/bin/*.exe usr/share/'
+libtidy0_99_0_SUMMARY="${SUMMARY} library (runtime)"
+libtidy0_99_0_CONTENTS="usr/bin/cygtidy-0-99-0.dll"
+libtidy_devel_SUMMARY="${SUMMARY} library (development)"
+libtidy_devel_CONTENTS='usr/include/ usr/lib/'
+
+src_compile() {
+	lndirs
+	cd ${B}
+	sh ./build/gnuauto/setup.sh || error "autotool setup.sh failed"
+	CYGCONF_SOURCE=${B} cygconf --includedir=/usr/include/tidy
+	cygmake
+}
+
+HTMLDOCS="htmldoc/*"

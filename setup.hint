@@ -1,4 +1,0 @@
-category: Text
-requires: libtidy0_99_0
-sdesc: "HTML pretty printer (executables)"
-ldesc: "HTML pretty printer library and executable"

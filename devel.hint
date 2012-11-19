@@ -1,5 +1,0 @@
-category: Text
-requires: libtidy0_99_0
-external-source: tidy
-sdesc: "HTML pretty printer (library development)"
-ldesc: "HTML pretty printer library and executable"
